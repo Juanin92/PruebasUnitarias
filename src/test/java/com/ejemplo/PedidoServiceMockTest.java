@@ -10,8 +10,8 @@ class PedidoServiceMockTest {
 
     @Test
     void testConMockDeDescuento() {
-        DescuentoRepository mockRepo = mock(DescuentoRepository.class);
-        when(mockRepo.obtenerPorcentaje("PROMO10")).thenReturn(0.10);
+        DiscountRepository mockRepo = mock(DiscountRepository.class);
+        when(mockRepo.getPercentage("PROMO10")).thenReturn(0.10);
 
         PedidoService service = new PedidoService(mockRepo);
         double total = service.calcularTotal(100, "PROMO10", true);
