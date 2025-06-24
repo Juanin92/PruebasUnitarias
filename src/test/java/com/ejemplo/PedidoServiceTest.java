@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PedidoServiceTest {
 
-//    PedidoService service = new PedidoService();
+//    OrderService service = new OrderService();
 //
 //    @Test
 //    void testSinDescuentoYEnvioNormal() {
